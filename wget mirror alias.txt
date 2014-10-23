@@ -1,1 +1,0 @@
-alias mirror='wget -e robots=off -m -r -np'
