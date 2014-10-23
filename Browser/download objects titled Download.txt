@@ -1,0 +1,10 @@
+var links = document.querySelectorAll('a[title="Download"]');
+for (var i = 0; i < links.length; i++) {
+    window.open(links[i].href,"_blank");
+}
+
+
+var links = document.querySelectorAll('img[title="Download"]');
+for (var i = 0; i < links.length; i++) {
+    window.open(links[i].parentNode.href,"_blank");
+}
