@@ -1,3 +1,5 @@
+
+
 var links = document.querySelectorAll('a[title="Download"]');
 for (var i = 0; i < links.length; i++) {
     window.open(links[i].href,"_blank");
@@ -7,4 +9,11 @@ for (var i = 0; i < links.length; i++) {
 var links = document.querySelectorAll('img[title="Download"]');
 for (var i = 0; i < links.length; i++) {
     window.open(links[i].parentNode.href,"_blank");
+}
+
+
+var links = document.querySelectorAll('a[class="tooltip"]');
+for (var i = 0; i < links.length; i++) {
+    if (links[i].innerHTML == "DL") { window.open(links[i].href,"_blank");
+    }
 }
